@@ -1,3 +1,4 @@
+import { PipesModule } from './../pipes/pipes.module';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
@@ -17,10 +18,11 @@ import { ErrorsComponent } from './errors/errors.component';
 
     imports: [
       RouterModule,
-      CommonModule
+      CommonModule,
+      PipesModule
     ],
     declarations: [
-      ErrorsComponent,  
+      ErrorsComponent,
       BreadcrumbsComponent,
       HeaderComponent,
       SidebarComponent
@@ -29,7 +31,7 @@ import { ErrorsComponent } from './errors/errors.component';
         ErrorsComponent,
         BreadcrumbsComponent,
         HeaderComponent,
-        SidebarComponent  
-    ]  
+        SidebarComponent
+    ]
   })
   export class ShareModule { }
